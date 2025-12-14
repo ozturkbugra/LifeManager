@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LifeManager.Core.Entities
+﻿namespace LifeManager.Core.Entities
 {
-    class Location
+    public class Location : BaseEntity
     {
+        public string Title { get; set; } // "Ahmet'in evi"
+        public string OpenAddress { get; set; }
+        public string GoogleMapsLink { get; set; }
+        public string Note { get; set; }
     }
 }
